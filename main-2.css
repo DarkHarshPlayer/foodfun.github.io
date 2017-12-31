@@ -1,0 +1,259 @@
+#logo{
+    border: 2px solid transparent;
+    position: fixed;
+    top: 0;
+    left: 45%;
+    z-index: 10;
+    background-color: transparent;
+    padding: 0px;
+    border-radius: 30%;
+    font-size: 40px;
+    font-family: handle;
+    color: red;
+    -webkit-animation: titleswing 2s infinite , opac 10s 1;
+    opacity: 0.75;
+
+}
+
+@-webkit-keyframes titleswing {
+    0%{-webkit-transform: rotate(-10deg);}
+    50%{-webkit-transform: rotate(10deg);}
+   100%{-webkit-transform: rotate(-10deg);}
+}
+
+@-webkit-keyframes opac {
+    0%{opacity: 0;}
+    100%{opacity: .9;}
+}
+.titel{
+    height: auto;
+    background-color: rgba(0,0,0,0.655);
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    z-index: 4;
+    text-align: center;
+    top: 10%;
+
+
+}
+.titel > h1{
+    color: red;
+    font-size: 90px;
+    text-shadow:0 0 9px white ;
+    -webkit-text-stroke: 1px white;
+    font-family: Chage;
+ }
+.titel>h2{
+    color: white;
+    font-family: IndieFlower;
+}
+@font-face {
+    font-family: Chage;
+    src: url(fonts/Chango-Regular.ttf);
+}
+@font-face {
+    font-family: IndieFlower;
+    src: url(fonts/IndieFlower.ttf);
+}
+
+@font-face {
+    font-family: Concert;
+    src: url(fonts/ConcertOne-Regular.ttf);
+}
+@font-face {
+    font-family: brike;
+    src: url(fonts/BerkshireSwash-Regular.ttf);
+}
+@font-face {
+    font-family: handle;
+    src: url(fonts/KBDunkTank.ttf);
+}
+@font-face {
+    font-family: andle;
+    src: url(fonts/Handlee-Regular.ttf);
+}
+.textbox{
+    background: whitesmoke;
+    border-radius: 25%;
+    text-align: center;
+    font-family: brike;
+    border: .1px solid #777777;
+    width: 300px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 2px 2px 8px 5px rgba(0,0,0,0.3), 0 5px 5px 0 rgba(0,0,0,0.6);
+    z-index: 2;
+}
+#chefintro{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease-out;
+}
+.buto{
+    height: 58px;
+    cursor: pointer;
+    font-size: 50px;
+    width: 340px;
+    border: 1px solid greenyellow;
+    background-color: greenyellow;
+    font-family: IndieFlower;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.7);
+}
+#butintro{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    left: 60%;
+    transition: 1s all ease-out;
+}
+
+.bupfara{
+    transform: translateY(-300px) !important;
+    opacity: 1 !important;
+}
+.parafade0{
+    transform: translateY(-300px)!important;
+    opacity: 1!important;
+}
+.parafade1{
+    transform: translateY(0px)!important;
+    opacity: 1!important;
+}
+.imgc{
+    position: absolute;
+    z-index: 3;
+    border-radius: 5%;
+    box-shadow: 3px 5px 5px 0 rgba(0,0,0,0.7) ;
+
+}
+#img1{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease-out;
+}
+#img2{
+    position: absolute;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease-out;
+}
+
+#chefmodalbox{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width:100%;
+    padding-top: 30px;
+    background: rgba(0,0,0,0.4);
+    top:0;
+    left:0;
+    overflow: auto;
+    z-index: 10;
+
+}
+
+#chefmodalboxcontent{
+    background-color: white;
+    padding: 20px;
+    border-radius: 0%;
+    margin: auto;
+    width: 80%;
+    height: 85%;
+    overflow: scroll;
+    align-content: flex-start;
+}
+#clsmod{
+     position: fixed;
+    top: 2%;
+    right: 10%;
+     text-align: right;
+     font-size: 40px;
+    cursor: pointer;
+    float: right;
+}
+#clsmod:hover{
+    color:black;
+}
+.modchefbox{
+    padding: 20px;
+    width: 90%;
+    height: auto;
+    background-color: seashell;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.6);
+}
+
+#menbut{
+    padding: 20px;
+    border-radius: 20%;
+    background-color: cyan;
+    font-size: 50px;
+    font-family: IndieFlower;
+    color: red;
+    border: 1px solid cyan;
+    box-shadow: 0 0px 0px 0px rgba(0,0,0,0.6);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+#menbut:hover{
+    box-shadow: 0 3px 5px  rgba(0,0,0,0.5), 0 3px 5px  rgba(0,0,0,0.5);
+}
+
+.endbox{
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    color: red;
+    font-weight: 100;
+    font-size: 100px;
+}
+.fb{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    top: 67%;
+    left: 8%
+}
+.tw{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    top: 67%;
+    left: 30%
+}
+ .ins{
+     transition: all .3s ease-in-out;
+     cursor: pointer;
+     position: absolute;
+     top: 67%;
+     left: 50%
+ }
+ .gp{
+     transition: all .3s ease-in-out;
+     cursor: pointer;
+     position: absolute;
+     top: 67%;
+     left: 70%
+ }
+.fb:hover{
+    top: 65%;
+}
+.tw:hover{
+    top: 65%;
+}
+.ins:hover{
+    top: 65%;
+}
+.gp:hover{
+    top: 65%;
+}
+.okp{
+    position: absolute;
+    left: 48%;
+    top: 56.0%
+}
+.okp:active{
+    left: 48.1%;
+    top: 56.1%;
+}
